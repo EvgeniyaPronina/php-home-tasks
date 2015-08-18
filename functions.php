@@ -52,7 +52,7 @@ function arifmetica($myArray, $action) {
 			echo "Разность между первым числовым и остальными числовыми элементами массива равна " . $dif;
 			break;
 		case 'умножение':
-			$comp;
+			$comp = 1;
 			for ($i = 0; $i < count($myArray); $i++) {
 				if (gettype($myArray[$i]) == 'integer' || gettype($myArray[$i]) == 'double') {
 					$comp = $comp * $myArray[$i];
